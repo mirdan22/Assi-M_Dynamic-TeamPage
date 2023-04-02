@@ -109,3 +109,45 @@ body {
       padding: 10px;
     }
 }
+section p {
+    display: none;
+  }
+  
+  section p.show {
+    display: block;
+  }
+  .pop-out-container-close {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: orange;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    
+  }
+  .pop-out-container-close:hover {
+    background-color: #e18700;
+}
+
+  button {
+    background-color: #333;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	padding: 10px 20px;
+  }
+  button:hover {
+    background-color: #ff9900;
+    color: #fff;
+    transform: scale(0.95);
+  }
