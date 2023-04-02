@@ -36,4 +36,14 @@ popOutBtns.forEach((btn, index) => {
 popOutContainer.style.top = '50%';
 popOutContainer.style.left = '50%';
 popOutContainer.style.transform = 'translate(-50%, -50%)';
+
+btn.addEventListener('click', () => {
+    document.body.appendChild(popOutContainer);
+    popOutContainer.style.display = 'block';
+
+    const popOutContainerClose = popOutContainer.querySelector('.pop-out-container-close');
+    popOutContainerClose.addEventListener('click', () => {
+      popOutContainer.style.display = 'none';
+    });
+  });
 });  
