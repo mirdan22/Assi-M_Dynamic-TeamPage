@@ -72,3 +72,40 @@ body {
     border-radius: 50%;
     max-width: 100%;
   }
+  /* Media Queries */
+  
+  @media screen and (max-width: 767px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    nav {
+      margin-top: 20px;
+    }
+    
+    nav ul {
+      flex-direction: column;
+    }
+    
+    nav li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    
+    main {
+      padding: 0 10px;
+    }
+    
+    .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+    
+    section {
+      padding: 10px;
+    }
+    
+    .pop-out-container {
+      padding: 10px;
+    }
+}
