@@ -24,4 +24,16 @@ popOutBtns.forEach((btn, index) => {
       <p>${teamMember.bio}</p>
       <span class="pop-out-container-close">&times;</span>
     `;
+     // Center the text and apply basic styling
+  popOutContainer.style.textAlign = 'center';
+  popOutContainer.style.width = '800px';
+  popOutContainer.style.height = '500px';
+  popOutContainer.style.padding = '20px';
+//   popOutContainer.style.height = '200px';
+  popOutContainer.style.backgroundColor = 'white';
+  popOutContainer.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.3)';
+  popOutContainer.style.position = 'fixed';
+popOutContainer.style.top = '50%';
+popOutContainer.style.left = '50%';
+popOutContainer.style.transform = 'translate(-50%, -50%)';
 });  
